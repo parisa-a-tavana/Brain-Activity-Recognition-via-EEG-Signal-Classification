@@ -9,3 +9,14 @@ The EEG signals were recorded using a 128-channel device, with a sampling rate o
 With 90 participants involved in the trials, the dataset comprised dimensions of 128 channels by 3500 samples by 90 individuals. The labels assigned to the data points were either 'human' or 'piano'.
 <br>
 ![Image 1](images/eeg.jpg)
+<br>
+<br>
+__Feature Extraction__:
+<br>
+Extracted features are meant to minimize the loss of important information embedded in the signal. In addition, they also simplify the amount of resources needed to describe a huge set of data accurately. A variety of methods have been widely used to extract the features from EEG signals, among these methods are time frequency distributions (TFD), fast fourier transform (FFT), eigenvector methods (EM), wavelet transform (WT), and auto regressive method (ARM).
+Frequency domain methods may not provide high-quality performance for some EEG signals. In contrast, time-frequency methods, for instance, may not provide detailed information on EEG analysis as much as frequency domain methods.
+<br>
+in this project, we used the method of dividing the data into different overlapping windows, as a method for feature selection.Overlapping windows for feature extraction is a technique where a dataset is divided into consecutive segments (windows) of fixed length, with each window overlapping partially with the adjacent ones. This approach is commonly used in signal processing tasks such as feature extraction from EEG signals.
+<br>
+
+We have a dataset comprising 126 channels, 90 participants, and 3500 samples over time. To extract features, we employ a windowing technique with a length of 70, slides through the third dimension(time). The mean of each window is calculated, serving as the extracted features. So, the dataset is transformed into a format of 126 channels, 90 participants, and 70 time slots. Finally, we convert the features to 50 dataframes of 126*90. Each dataframe represents a time slot.
