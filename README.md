@@ -59,7 +59,7 @@ the samples of the $k_{th}$ dataframe vary from $50k$ to $50k+70$,
 so the middle sample index is $\frac{50k+50k+70}{2}=50k+35$, which is $\frac{7}{3500}*(50k+35)*1000=100k+70$ milliseconds.
 <br>
 <br>
-![Alt text](images/accuracy_time.jpg)
+![Image 2](images/accuracy_time.jpg)
 <br>
 In all models the highest accuracy was achieved at t=4470 ms which means in that time, the brain distinguished whether the picture is a piano or a human.
 
