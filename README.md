@@ -43,13 +43,13 @@ To achive better accuracy, we use 5 different random seed numbers to get  each t
 <br>
 **Results**:
 <br>
-We plot the mean accuracy and the standard error band: $SE=\frac{std}{\sqrt[N]}$
-
+We plot the mean accuracy and the standard error band: $SE=\frac{\sigma}{\sqrt{N}}$
+<br>
 N: number of samples
-
-std:	sample standard deviation
-
+<br>
+$\sigma$:	sample standard deviation
+<br>
 SE:standard error of the sample
-
+<br>
 so the maximum  of the band is mean+SE and the minimum of the band is mean-SE
 
