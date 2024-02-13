@@ -18,5 +18,25 @@ Frequency domain methods may not provide high-quality performance for some EEG s
 <br>
 in this project, we used the method of dividing the data into different overlapping windows, as a method for feature selection.Overlapping windows for feature extraction is a technique where a dataset is divided into consecutive segments (windows) of fixed length, with each window overlapping partially with the adjacent ones. This approach is commonly used in signal processing tasks such as feature extraction from EEG signals.
 <br>
-
 We have a dataset comprising 126 channels, 90 participants, and 3500 samples over time. To extract features, we employ a windowing technique with a length of 70, slides through the third dimension(time). The mean of each window is calculated, serving as the extracted features. So, the dataset is transformed into a format of 126 channels, 90 participants, and 70 time slots. Finally, we convert the features to 50 dataframes of 126*90. Each dataframe represents a time slot.
+<br>
+<br>
+**Preprocessing:**
+<br>
+We shuffle our data frame, split it into test and train datasets , and use standardscaler and random seed on our test and train data. standardscaler moves the mean to 0 and scales the variance to 1.
+<br>
+<br>
+**Classification:**
+<br>
+For classification, we have 3 classification models. KNN, SVM, and Neural Networks(MLP).
+<br>
+<br>
+**Cross Validation:**
+<br>
+We use GreadsearchCV that is a (type of k-fold cross validation metode)to find the hyperparameters.
+ After finding the best hyper paarameters, we train our model, evaluate the model on test data, and return test accuracy.
+ <br>
+ we define a function called "Repeated_Classification". It classifies a dataframe 5 times with the selected model.
+
+To achive better accuracy, we use 5 different random seed numbers to get  each time we use a different random seed number to classify dataframe 5 times.for each data frame, we get the mean and standard deviation of the accuracies. we return a list of accuracy means and a list of accuracy stds
+
