@@ -39,4 +39,17 @@ We use GreadsearchCV that is a (type of k-fold cross validation metode)to find t
  we define a function called "Repeated_Classification". It classifies a dataframe 5 times with the selected model.
 
 To achive better accuracy, we use 5 different random seed numbers to get  each time we use a different random seed number to classify dataframe 5 times.for each data frame, we get the mean and standard deviation of the accuracies. we return a list of accuracy means and a list of accuracy stds
+<br>
+<br>
+**Results**:
+<br>
+We plot the mean accuracy and the standard error band: $SE=\frac{std}{N\sqrt}$
+
+N: number of samples
+
+std:	sample standard deviation
+
+SE:standard error of the sample
+
+so the maximum  of the band is mean+SE and the minimum of the band is mean-SE
 
