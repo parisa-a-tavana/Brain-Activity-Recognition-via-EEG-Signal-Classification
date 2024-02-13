@@ -43,7 +43,7 @@ To achive better accuracy, we use 5 different random seed numbers to get  each t
 <br>
 **Results**:
 <br>
-We plot the mean accuracy and the standard error band: $SE=\frac{std}{N\sqrt}$
+We plot the mean accuracy and the standard error band: $SE=\frac{std}{\sqrt[N]}$
 
 N: number of samples
 
