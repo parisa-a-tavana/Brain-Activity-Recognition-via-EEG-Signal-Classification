@@ -56,5 +56,5 @@ so the maximum  of the band is mean+SE and the minimum of the band is mean-SE
 we also map the number of our dataframes to time.for each dataframe, we flattend the mean of window with length of 70 samples, so for each dataframe, we convert the number of its middle sample to milliseconds:
 <br>
 the samples of the $k_th$ dataframe vary from $50k$ to $50k+70$.
-so the middle sample index is $\frac{50k+50k+70}{2}=50k+35$. which is $(50k+35)*(7/3500)*1000=10*(50k+35)/5=100k+70$ milliseconds
+so the middle sample index is $\frac{50k+50k+70}{2}=50k+35$. which is $(50k+35)*\frac{7}{3500}*1000=10*\frac{50k+35}{5}=100k+70$ milliseconds
 
